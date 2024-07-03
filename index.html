@@ -1,0 +1,1231 @@
+<!--DOCTYPE html-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==title==========================-->
+    <title>MasterCook | Home</title>
+    <!--==fav-icon=======================-->
+    <link rel="shortcut icon" href="image/Group15654.png" type="image/x-icon" />
+    <!--==import-poppins-font============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Include Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="path-to-swiper/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--==Font-Awesome-for-icons=========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!--==CSS============================-->
+    <link rel="stylesheet" href="css/zstyle.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"
+    ></script>
+  </head>
+  <body>
+    <section id="main">
+      <!--==nav=======================================-->
+      <nav class="navigation">
+        <!-- Responsive menu -->
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown()">☰</button>
+          <div id="myDropdown" class="dropdown-content">
+            <div class="res-nav">
+              <a class="nav-res-menu forActive" href="#">Home</a>
+              <a class="nav-res-menu forActive" href="#course">Course</a>
+              <a class="nav-res-menu forActive" href="#gallery">Gallery</a>
+              <a class="nav-res-menu forActive" href="#team">Team</a>
+              <a class="nav-res-menu forActive" href="/product.html">Shop</a>
+              <a class="nav-res-menu forActive" href="/contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+        <!--**logo********-->
+        <div>
+          <a href="index.html" class="logo">
+            <div class="logo-img"><img src="image/Group15654.png" /></div>
+            <div><h2>MasterCook</h2></div>
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="active"><a href="#">Home</a></li>
+
+          <li><a class="forActive" href="#course">Course</a></li>
+          <li><a class="forActive" href="#gallery">Gallery</a></li>
+          <li><a class="forActive" href="#team">Team</a></li>
+          <li><a class="forActive" href="/product.html">Shop</a></li>
+          <li><a class="forActive" href="/cart.html">Cart</a></li>
+          <li><a class="forActive" href="/contact.html">Contact</a></li>
+        </ul>
+        <!--**nav-btns****-->
+        <div class="nav-end">
+          <div class="nav-btns">
+            <!--search-->
+            <a href="#" class="nav-user btn-round">
+              <i class="fa-regular fa-heart btn-round"></i>
+              <!--search-container-->
+            </a>
+            <!--user-->
+            <a href="#" class="nav-user btn-round">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <!--cart-->
+            <a href="/cart.html" class="nav-cart">
+              <i class="fa-solid fa-cart-shopping btn-round"></i>
+
+              <span>0</span>
+            </a>
+          </div>
+          <div class="nav-get-btn">
+            <a class="get-quote-btn" href="#form" class=""> GET A QUOTE</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--nav-end-->
+
+      <!--==main=============================-->
+      <div class="slide-area">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="image/s2.png" alt="logo" />
+              <div class="text-slider">
+                <div class="text-slider-home-made">
+                  <div class="text-slider-img-div">
+                    <img
+                      class="text-slider-img"
+                      src="image/apple.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <span>Home made food</span>
+                </div>
+                <h2 style="margin-left: -20px">Become the</h2>
+                <h2>Master Chef</h2>
+                <div class="slider-btn-fix">
+                  <a href="#" id="btn-round" class="get-button">
+                    <span>Explore Classes</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/s2.png" alt="logo" />
+              <div class="text-slider">
+                <div class="text-slider-home-made">
+                  <div class="text-slider-img-div">
+                    <img
+                      class="text-slider-img"
+                      src="image/apple.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div>Home made food</div>
+                </div>
+                <h2 style="margin-left: -20px">Become the</h2>
+                <h2>Master Chef</h2>
+                <div class="slider-btn-fix">
+                  <a href="#" id="btn-round" class="get-button">
+                    <span>Explore Classes</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/s2.png" alt="logo" />
+              <div class="text-slider">
+                <div class="text-slider-home-made">
+                  <div class="text-slider-img-div">
+                    <img
+                      class="text-slider-img"
+                      src="image/apple.png"
+                      alt="logo"
+                    />
+                  </div>
+                  <div>Home made food</div>
+                </div>
+                <h2 class="become" id="become">Become the</h2>
+                <h2>Master Chef</h2>
+                <div class="slider-btn-fix">
+                  <a href="#" id="btn-round" class="get-button">
+                    <span>Explore Classes</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--==Sale==================================-->
+    <section class="sale">
+      <div class="sales-herbal">
+        <!--**box1**********************-->
+        <div class="sale-box bgcolor1">
+          <!--img-->
+          <div class="buy">
+            <img src="image/glass.png" />
+          </div>
+          <!--text-->
+
+          <div class="sale-text">
+            <strong>hot sales</strong>
+            <h1>Instant</h1>
+            <span>Mango & drin</span>
+            <div class="saletext">
+              <p>Buy Now</p>
+              <a href="#" class="hot"
+                ><i class="fa-solid fa-circle-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--**box2**********************-->
+        <div class="sale-box bgcolor2">
+          <!--img-->
+
+          <div class="buy"><img src="image/generated.png" /></div>
+          <!--text-->
+
+          <div class="sale-text">
+            <strong>Herbs & Spices</strong>
+            <h1>Save 20%</h1>
+            <span>Every Order</span>
+            <div class="saletext">
+              <p>Buy Now</p>
+              <a href="#" class="get-button"
+                ><i class="fa-solid fa-circle-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--**box3**********************-->
+        <div class="sale-box bgcolor3">
+          <!--img-->
+          <div class="buy">
+            <img src="image/egg.png" />
+          </div>
+          <!--text-->
+
+          <div class="sale-text">
+            <strong>Local Foods</strong>
+            <h1>Up To 20</h1>
+            <span>Recipes</span>
+            <div class="saletext">
+              <p>Buy Now</p>
+              <a href="#" class="get-button"
+                ><i class="fa-solid fa-circle-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--sale-end-->
+
+    <!-- =========classes================= -->
+    <section class="onlin">
+      <div class="group967">
+        <div class="text-class">
+          <span> # Online Class</span>
+          <strong> Learn How To Cook From Your Home <n /></strong>
+          <p>
+            We are a community passionate about the art of cooking and sharing
+            our culinary expertise with you. With years of experience in the
+            culinary industry, we present inspiring interactive cooking classes.
+          </p>
+        </div>
+
+        <div class="clasimg">
+          <div class="imgarea">
+            <img src="image/group1169.png" />
+          </div>
+
+          <div class="ellipse">
+            <img src="image/group1093.jpg" />
+          </div>
+
+          <div class="chf">
+            <img src="image/vector.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==Services==============================-->
+
+    <section class="onlinclass">
+      <!--**container***********************-->
+      <div class="section-container">
+        <div class="plat">
+          <div class="plate-area">
+            <div class="group-1105">
+              <img src="image/group1105.jpg" alt="" />
+            </div>
+            <div class="plat-food">
+              <img src="image/plate-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="food-detail">
+          <div class="food-company1 food-company">
+            <!--logo-->
+            <a href="#" class="food-icons"><img src="image/user.svg" /></a>
+
+            <!--details-->
+            <div class="detail">
+              <h2>Established</h2>
+
+              <div class="food-estab">
+                <p>
+                  Operating since 2013, ensuring a seamless and satisfying
+                  culinary journey.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="food-company2 food-company">
+            <a href="#" class="food-icons"><i class="fas fa-adjust"></i></a>
+
+            <div class="detail">
+              <h2>Mission</h2>
+
+              <div class="food-estab">
+                <p>
+                  We celebrate diverse culinary traditions from around the
+                  world, inspiring you today.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="food-company3 food-company">
+            <!--logo-->
+            <a href="#" class="food-icons">
+              <i class="fa-regular fa-heart btn-round"></i>
+            </a>
+            <!--search-container-->
+            <div class="detail">
+              <h2>Vision</h2>
+
+              <div class="food-estab">
+                <p>
+                  We foster a vibrant foodie community where joy comes with
+                  sharing recipes with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============popular course -->
+    <section id="course" class="our-course">
+      <div class="main-box">
+        <div class="center-heading"><h1>Our Popular Courses</h1></div>
+        <div class="main-layer"></div>
+        <div class="content-box">
+          <div class="content-text">
+            <p>
+              Li Europan lingues es membres del sam familie. Lor separat
+              existentie es un myth.
+            </p>
+          </div>
+          <div class="inner-boxes">
+            <div class="inner-box inner1">
+              <a href="#" class="nav-user btn-round">
+                <img src="image/Group2.svg" />
+              </a>
+              <strong>rstaurant menu making</strong>
+              <span
+                >Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.</span
+              >
+            </div>
+            <div class="inner-box inner11">
+              <a href="#" class="nav-user btn-round">
+                <img src="image/Group3.svg" />
+              </a>
+              <strong>Event Food Planning </strong>
+              <span
+                >Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.</span
+              >
+            </div>
+            <div class="inner-box inner3">
+              <a href="#" class="nav-user btn-round">
+                <img src="image/Group1.svg" />
+              </a>
+              <strong> Culinary Workshop </strong>
+              <span>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   provide Comprehensive  Culinary Education   -->
+
+      <div class="education">
+        <div class="education-box">
+          <div id="edu-text">
+            <div class="text-pro">
+              <strong>Provide a Comprehensive Culinary Education</strong>
+              <span
+                >Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth. Por scientie, musica, sport etc, litot
+                Europa usa li sam vocabular. Li lingues differe solmen in li
+                grammatica, li pronunciation e li plu commun vocab.</span
+              >
+            </div>
+            <div class="box-area">
+              <div class="box-kit box-bod">
+                <h2>Kitchen Mastery</h2>
+
+                <p>Li Europan lingues es membres del sam familie.</p>
+              </div>
+
+              <div class="box-exp box-bod">
+                <h2>Experience</h2>
+                <p>Li Europan lingues es membres del sam familie.</p>
+              </div>
+
+              <div class="box-cook box-bod">
+                <h2>Cooking Recipes</h2>
+                <p>Li Europan lingues es membres del sam familie.</p>
+              </div>
+
+              <div class="box-team box-bod">
+                <h2>Teamwork</h2>
+                <p>Li Europan lingues es membres del sam familie.</p>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="image/chef-img.png" alt="Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========Gallery============= -->
+
+    <section id="gallery" class="gallery">
+      <h1>Gallery</h1>
+      <div class="gallery-heading">
+        <p>
+          Li Europan lingues es membres del sam familie. Lor separat existentie
+          es un myth.
+        </p>
+      </div>
+
+      <div class="gallery-area">
+        <div class="left-image">
+          <img src="image/productbg.jpg" alt="Left Image" />
+          <img src="image/productbgleft.png" alt="Left Image" />
+          <img src="image/product.jpg" alt="LeftImage" />
+        </div>
+        <div class="text-spaght">
+          <strong>Event</strong>
+          <h2>Spaghetti</h2>
+          <span>04/04/2024</span>
+          <div class="brand-logo">
+            <strong>BRAND:</strong>
+            <div class="brand-logo-img">
+              <img src="image/gallerylogo.png" />
+            </div>
+          </div>
+          <span>
+            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
+            in laying out print, graphic or web designs. The passage is
+            attributed to an unknown typesetter in the 15th century who is
+            thought</span
+          >
+          <div class="weights">
+            <strong>weight:</strong>
+            <span>1kg</span><span>5kg</span><span>250kg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-product-food">
+      <div id="swp-container">
+        <div class="swiper-container-gallery">
+          <div class="swiper-wrapper" id="swpw">
+            <div class="swiper-slide">
+              <img src="image/product1.png" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/product2.png" alt="Image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/product3.png" alt="Image 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/product4.png" alt="Image 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/product5.png" alt="Image 5" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/product6.png" alt="Image 6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============Food Group -->
+    <section class="food">
+      <div class="main-food">
+        <div class="food-shape"></div>
+        <img class="main-food-png" src="image/Group 15183.png" alt="" />
+        <div class="food-contact">
+          <div class="food-content">
+            <p id="live" class="live">Live stream</p>
+            <strong class="food-need">Need Any Organic Fresh Food ?</strong>
+            <p class="live-description">
+              Cur tantas regiones barbarorum obiit, tot maria transmist summo
+              bono fruitur id est voluptate barbarorum nunito regula 16
+            </p>
+            <div>
+              <a href="/contact.html" id="btn-round" class="get-button"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="food-video">
+          <div class="imageshow">
+            <img
+              class="imageshow-img"
+              src="image/foodgroup.jpg"
+              alt="Video Thumbnail"
+            />
+            <div class="video-container" id="videoContainer">
+              <div class="video-icon" onclick="playVideo()">
+                <img src="image/play.svg" alt="Video Icon" />
+              </div>
+              <div class="video-player" id="videoPlayer">
+                <video controls>
+                  <source
+                    src="video/bandicam 2024-05-25 05-41-26-178.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <button class="close-button" onclick="closeVideo()">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  +++++++++++++==Our partner  -->
+    <section class="partner">
+      <div class="partner_text heading-every">
+        <h1>partners</h1>
+        <span class="pc">Companies Affiliated with MasterCook Africa</span>
+      </div>
+
+      <div class="partner-area">
+        <img src="image/prt1.png" alt="Image 1" />
+        <img src="image/prt2.png" alt="Image 2" />
+        <img src="image/prt4.png" alt="Image 3" />
+        <img src="image/prt3.png" alt="Image 4" />
+        <img src="image/prt5.png" alt="Image 5" />
+      </div>
+    </section>
+
+    <!-- ========Team Memebers -->
+
+    <section id="team" class="team-members">
+      <div class="heading-every">
+        <h1>team memebers</h1>
+        <span class="pg">Companies Affiliated with MasterCook Africa</span>
+      </div>
+
+      <div class="members-area">
+        <div class="memeber-box">
+          <img src="image/1.png" alt="Image 1" />
+          <strong>john abraham</strong>
+          <span>consultant</span>
+
+          <div class="social-icons">
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="memeber-box">
+          <div class="user-photo">
+            <img src="image/2.png" alt="Image 1" />
+            <img
+              class="user-photo-circle1 photo-circle"
+              src="image/Path 76841.png"
+              alt=""
+            />
+            <img
+              class="user-photo-circle2 photo-circle"
+              src="image/Path 76841.png"
+              alt=""
+            />
+          </div>
+
+          <strong>john abraham</strong>
+          <span>Organizer</span>
+          <div class="social-icons">
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="memeber-box">
+          <img src="image/3.png" alt="Image 1" />
+          <strong>john abraham</strong>
+          <span>Manager</span>
+          <div class="social-icons">
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="memeber-social">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== carosil area for product======= -->
+
+    <section class="merchandise">
+      <div class="product-slide-area">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="team_text heading-every1 merchandise-p">
+          <h1>merchandise</h1>
+          <span class=""
+            >Maecenas quis viverra metus, et efficitur ligula. Nam congue augue
+            et ex congue</span
+          >
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container-product">
+          <div class="swiper-wrapper caro">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="image/healthy.png" alt="Image 1" />
+              <div class="swiper-caption">
+                <strong>Fruits & Vegies</strong>
+                <span>(235 item)</span>
+                <div class="product-row"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/medicine.png" alt="Image 2" />
+              <div class="swiper-caption">
+                <strong>Herbal Tea</strong>
+                <span>(235 item)</span>
+                <div class="product-row"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/lemonade.png" alt="Image 3" />
+              <div class="swiper-caption">
+                <strong>juice</strong>
+                <span>(235 item)</span>
+                <div class="product-row"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/fast.png" alt="Image 4" />
+              <div class="swiper-caption">
+                <strong> Fast Foods</strong>
+                <span>(235 item)</span>
+                <div class="product-row"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="image/packag.png" alt="Image 5" />
+              <div class="swiper-caption">
+                <strong> Package Food</strong>
+                <span>(235 item)</span>
+                <div class="product-row"></div>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- Add pagination and navigation if needed -->
+        </div>
+
+        <div class="product-shirt">
+          <img src="image/shirt-logo.png" alt="logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section Start -->
+    <section class="cart-section">
+      <div class="cart-container">
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/chefhat 1.png" alt="Juicy Orange Pack" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/chefuni 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/apron-1-500x500 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/spoon 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/knife 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/bowel 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce p2</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/41vW5p0wLhL 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/cheft 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img
+              src="image/2ff80ea1-6d32-412b-b1f5-ff37f15d3ba6 1.png"
+              alt="syzygium malacce"
+            />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+        <div class="cart-product">
+          <div class="cart-img-div">
+            <img src="image/snip 1.png" alt="syzygium malacce" />
+            <div class="cart-btns">
+              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+            </div>
+          </div>
+          <div class="cart-content">
+            <div class="rating-container">
+              <div class="rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="reviews">(24)</span>
+              </div>
+            </div>
+            <h3>syzygium malacce</h3>
+            <p>$19.00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Section Start -->
+    <section class="question-section">
+      <div class="question-heading">
+        <h2>Some Questions</h2>
+        <p>
+          Maecenas quis viverra metus, et efficitur ligula. Nam congue augue et
+          ex congue.
+        </p>
+      </div>
+      <div class="question-container">
+        <div class="faq-section">
+          <div class="accordion-container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-button">How Do I enroll?</button>
+                <div class="accordion-content">
+                  <p>Content for how to enroll.</p>
+                </div>
+              </div>
+              <div class="accordion-item active">
+                <button class="accordion-button">
+                  How do I get Branded items?
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Maecenas quis viverra metus, et efficitur ligula. Nam congue
+                    augue et ex congue sem.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button">
+                  Can I attend Live sessions?
+                </button>
+                <div class="accordion-content">
+                  <p>Content for live sessions.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-button">What are your fees?</button>
+                <div class="accordion-content">
+                  <p>Content for fees.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question-image-section">
+          <img
+            src="image/pngtree-beautifull-orignal-nature-fruits-basket-png-image_6574081 1.png"
+            alt="Fruit Basket"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section Start -->
+    <section id="form" class="form-section">
+      <div class="form-container">
+        <div class="contact-info">
+          <h2>Feel free to contact us for any query.</h2>
+          <div class="info-item">
+            <div class="form-icon">
+              <img src="image/phoe-icon.png" alt="" />
+            </div>
+            <div>
+              <h3>Phone Number:</h3>
+              <p>Head office: (210) 123 451</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="form-icon">
+              <img src="image/text-icon.png" alt="" />
+            </div>
+            <div>
+              <h3>Mail Address:</h3>
+              <p>info@mastercheffafrica.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="form-icon">
+              <img src="image/location-icon.png" alt="" />
+            </div>
+            <div>
+              <h3>Office Address:</h3>
+              <p>Lusaka, Zambia</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                name="first_name"
+                placeholder="First Name*"
+                required
+              />
+              <input
+                type="text"
+                name="last_name"
+                placeholder="Last Name*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Mail Address*"
+                required
+              />
+              <input type="text" name="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <select name="product" required>
+                <option value="">Choose Product</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Enter Message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="get-quote-btn" type="submit">
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <img class="footer-pic1" src="image/Path 74974.png" alt="" />
+      <img class="footer-pic2" src="image/Path 74979.png" alt="" />
+      <img class="footer-pic3" src="image/Path 74975.png" alt="" />
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us.</h2>
+          <p>Africa's number 1 cooking TV show</p>
+          <div class="social-icons-footer">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2>Useful Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Room Details</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-section help">
+          <h2>Help?</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Term & conditions</a></li>
+            <li><a href="#">Reporting</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Support Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section subscribe">
+          <div class="footer-logo-div">
+            <div><img src="image/Group15654.png" /></div>
+            <div><h2>MasterCook Africa</h2></div>
+          </div>
+          <p>
+            Komana is a designer and developers create high quality UI/UX and
+            Software
+          </p>
+          <div class="footer-location">
+            <img
+              class="location-svg"
+              src="image/location-svgrepo-com (1).svg"
+              alt=""
+            />
+            <p style="margin: 14px 0">Lusaka, Zambia</p>
+          </div>
+          <form action="#">
+            <input type="email" placeholder="Enter email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; HB Mubin 2024 All rights reserved</p>
+      </div>
+    </footer>
+
+    <script type="module" src=" js/activ.js"></script>
+    <script type="module" src=" js/lightslider.js"></script>
+    <script type="module" src=" js/caro1.js"></script>
+    <script type="module" src=" js/caro.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      function playVideo() {
+        document.getElementById("videoPlayer").style.display = "block";
+        document.querySelector(".video-container").classList.add("active");
+      }
+
+      function closeVideo() {
+        document.getElementById("videoPlayer").style.display = "none";
+        document.querySelector(".video-container").classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

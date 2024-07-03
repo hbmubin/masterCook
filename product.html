@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterCook || Product Details</title>
+    <!--==fav-icon=======================-->
+    <link
+      rel="shortcut icon"
+      href="/image/Group15654.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="/image/Group15654.png"
+      type="image/x-icon"
+    />
+    <!--==import-poppins-font============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--==Font-Awesome-for-icons=========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/product-style.css" />
+    <link rel="stylesheet" href="css/product-responsive.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Top Heading -->
+
+    <header class="top-heading">
+      <div class="top-heading-container">
+        <div class="heading-left">
+          <h3>Welcome</h3>
+          <h3>| Call :+1 800 833 9780</h3>
+        </div>
+        <div class="heading-right">
+          <div class="heading-right-links">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div><span>|</span></div>
+          <div class="language-heading">
+            <div><img src="image/Group 7844.png" alt="" /></div>
+            <div>EN</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--==nav=======================================-->
+    <nav class="navigation">
+      <!-- Responsive menu -->
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">☰</button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="res-nav">
+            <a class="nav-res-menu" href="/index.html">Home</a>
+            <a class="nav-res-menu" href="#">About</a>
+            <a class="nav-res-menu" href="/product.html">Shop</a>
+            <a class="nav-res-menu" href="#">Pages</a>
+            <a class="nav-res-menu" href="#">Blog</a>
+            <a class="nav-res-menu" href="/cart.html">Cart</a>
+            <a class="nav-res-menu" href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <!--**logo********-->
+      <div>
+        <a href="index.html" class="logo">
+          <div class="logo-img"><img src="image/Group15654.png" /></div>
+          <div><h2>MasterCook</h2></div>
+        </a>
+      </div>
+
+      <!--**menu-btn****-->
+      <!-- <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label> -->
+      <!--**menu********-->
+      <ul class="menu">
+        <li><a class="" href="/index.html">Home</a></li>
+        <li><a class="" href="#">About</a></li>
+        <li><a class="" href="/product.html">Shop</a></li>
+        <li><a class="" href="#">Pages</a></li>
+        <li><a class="" href="#">Blog</a></li>
+        <li><a class="" href="/cart.html">Cart</a></li>
+        <li><a class="" href="/contact.html">Contact</a></li>
+      </ul>
+      <!--**nav-btns****-->
+      <div class="nav-end">
+        <div class="search-container">
+          <input type="text" placeholder="Find Products" class="search-input" />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!--**nav-end ****-->
+
+    <!-- e-shop-heading -->
+    <section class="e-shop-heading">
+      <div class="e-shop-heading-container">
+        <div class="e-shop-heading-content">
+          <h1>eShop</h1>
+          <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <span>></span>
+            <a href="#">eShop</a>
+          </div>
+        </div>
+      </div>
+      <div class="e-shop-heading-img">
+        <img src="image/Cinnamon.png" alt="" />
+      </div>
+    </section>
+    <!-- product-details-section -->
+    <section class="product-details-section">
+      <div class="product-details-container">
+        <div class="product-details-container2">
+          <div style="overflow: hidden" class="product-details-left">
+            <div
+              style="overflow: hidden"
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="image/main_img.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="image/main_img.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="image/main_img.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="product-details-right">
+            <div class="product">
+              <div class="title-row">
+                <h1 class="product-title">Black River Fruits</h1>
+                <div class="product-price">$32.00</div>
+              </div>
+              <div class="product-rating">
+                <div class="stars">
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                </div>
+                <span class="reviews">(22)</span>
+              </div>
+              <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip commodo.
+              </p>
+              <div class="product-options">
+                <div class="color-options">
+                  <span>Color:</span>
+                  <span
+                    class="color-swatch"
+                    style="background: rgb(249, 154, 41)"
+                  ></span>
+                  <span
+                    class="color-swatch"
+                    style="background: rgb(5, 222, 230)"
+                  ></span>
+                  <span
+                    class="color-swatch"
+                    style="background: rgb(196, 55, 255)"
+                  ></span>
+                  <span
+                    class="color-swatch"
+                    style="background: rgb(128, 181, 0)"
+                  ></span>
+                </div>
+                <div class="quantity-control">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1" />
+                  <button class="quantity-btn">+</button>
+                </div>
+              </div>
+              <div class="product-categories">
+                <span>Categories:</span> All, Featured, Organic, Vegetable
+              </div>
+              <div class="product-tags">
+                <span>Tags:</span> Black, Brown, Red, Shoes, £0.00 - £150.00
+              </div>
+              <div class="product-share">
+                <span>Share:</span>
+              </div>
+              <button class="add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+    <!-- product-info-section -->
+    <section class="product-info-section">
+      <div class="tab-container">
+        <div class="tabs">
+          <button
+            class="tab-button active"
+            onclick="openTab(event, 'Description')"
+          >
+            Description
+          </button>
+          <button class="tab-button" onclick="openTab(event, 'AdditionalInfo')">
+            Additional Info
+          </button>
+          <button class="tab-button" onclick="openTab(event, 'Reviews')">
+            Reviews
+          </button>
+          <button class="tab-button" onclick="openTab(event, 'Video')">
+            Video
+          </button>
+        </div>
+
+        <div id="Description" class="tab-content active">
+          <h2>Viverra a consectetur</h2>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over Vivamus ibendum magna Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Contrary to popular belief, Lorem Ipsum
+            is not simply basic Latin literature from 45 BC, making it
+          </p>
+          <h3 class="more-d">More Details</h3>
+          <ul>
+            <li>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </li>
+            <li>
+              Lorem Ipsum has been the industry's standard dummy text. Lorem
+              Ipsumum is simply dummy text.
+            </li>
+            <li>Type here your detail one by one li more add</li>
+            <li>
+              Has been the industry's standard dummy text ever since. Lorem Ips
+            </li>
+          </ul>
+        </div>
+
+        <div id="AdditionalInfo" class="tab-content">
+          <h2>Additional Info</h2>
+          <p>Additional information content goes here.</p>
+        </div>
+
+        <div id="Reviews" class="tab-content">
+          <h2>Reviews</h2>
+          <p>Reviews content goes here.</p>
+        </div>
+
+        <div id="Video" class="tab-content">
+          <h2>Video</h2>
+          <p>Video content goes here.</p>
+        </div>
+      </div>
+    </section>
+    <!-- trending -->
+    <section class="trending">
+      <div class="trending-container">
+        <div class="trending-heading">
+          <h2>Trending Products</h2>
+          <p>
+            A highly efficient slip-ring scanner for today's diagnostic
+            requirements.
+          </p>
+        </div>
+        <div class="trending-cart-container">
+          <div class="trending-cart">
+            <div class="cart-img-div">
+              <img src="image/chefhat 1.png" alt="syzygium malacce" />
+              <div class="cart-btns">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="cart-content">
+              <p>Health & protins</p>
+              <h3>syzygium malacce</h3>
+              <div class="line"></div>
+
+              <div class="rating-container">
+                <div><h4>$19.00</h4></div>
+                <div class="rating">
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-cart">
+            <div class="cart-img-div">
+              <img src="image/chefhat 1.png" alt="syzygium malacce" />
+              <div class="cart-btns">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="cart-content">
+              <p>Health & protins</p>
+              <h3>syzygium malacce</h3>
+              <div class="line"></div>
+
+              <div class="rating-container">
+                <div><h4>$19.00</h4></div>
+                <div class="rating">
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-cart">
+            <div class="cart-img-div">
+              <img src="image/chefhat 1.png" alt="syzygium malacce" />
+              <div class="cart-btns">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="cart-content">
+              <p>Health & protins</p>
+              <h3>syzygium malacce</h3>
+              <div class="line"></div>
+
+              <div class="rating-container">
+                <div><h4>$19.00</h4></div>
+                <div class="rating">
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trending-cart">
+            <div class="cart-img-div">
+              <img src="image/chefhat 1.png" alt="syzygium malacce" />
+              <div class="cart-btns">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass-plus"></i
+                ></a>
+              </div>
+            </div>
+            <div class="cart-content">
+              <p>Health & protins</p>
+              <h3>syzygium malacce</h3>
+              <div class="line"></div>
+
+              <div class="rating-container">
+                <div><h4>$19.00</h4></div>
+                <div class="rating">
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star filled">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  +++++++++++++==Our partner  -->
+    <section class="partner">
+      <div class="partner-area">
+        <img src="image/prt1.png" alt="Image 1" />
+        <img src="image/prt2.png" alt="Image 2" />
+        <img src="image/prt4.png" alt="Image 3" />
+        <img src="image/prt3.png" alt="Image 4" />
+        <img src="image/prt5.png" alt="Image 5" />
+      </div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="footer">
+      <img class="footer-pic1" src="image/Path 74974.png" alt="" />
+      <img class="footer-pic2" src="image/Path 74979.png" alt="" />
+      <img class="footer-pic3" src="image/Path 74975.png" alt="" />
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us.</h2>
+          <p>Africa's number 1 cooking TV show</p>
+          <div class="social-icons-footer">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2>Useful Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Room Details</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer-section help">
+          <h2>Help?</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Term & conditions</a></li>
+            <li><a href="#">Reporting</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Support Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section subscribe">
+          <div class="footer-logo-div">
+            <div><img src="image/Group15654.png" /></div>
+            <div><h2>MasterCook Africa</h2></div>
+          </div>
+          <p>
+            Komana is a designer and developers create high quality UI/UX and
+            Software
+          </p>
+          <div class="footer-location">
+            <img
+              class="location-svg"
+              src="image/location-svgrepo-com (1).svg"
+              alt=""
+            />
+            <p style="margin: 14px 0">Lusaka, Zambia</p>
+          </div>
+          <form action="#">
+            <input type="email" placeholder="Enter email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; HB Mubin 2024 All rights reserved</p>
+      </div>
+    </footer>
+    <script type="module" src=" js/activ.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/tab.js"></script>
+  </body>
+</html>
